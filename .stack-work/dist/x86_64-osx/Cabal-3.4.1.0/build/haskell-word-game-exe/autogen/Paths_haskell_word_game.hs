@@ -31,7 +31,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/macadmin/Code/haskell-word-game/.stack-work/install/x86_64-osx/e546c2190100397e37b574f3602f841215fe05dfe62b1aa5187eccb50755dbd2/9.0.2/bin"
-libdir     = "/Users/macadmin/Code/haskell-word-game/.stack-work/install/x86_64-osx/e546c2190100397e37b574f3602f841215fe05dfe62b1aa5187eccb50755dbd2/9.0.2/lib/x86_64-osx-ghc-9.0.2/haskell-word-game-0.1.0.0-1XCuL9JHwwiAtIvPjYILUw-haskell-word-game-exe"
+libdir     = "/Users/macadmin/Code/haskell-word-game/.stack-work/install/x86_64-osx/e546c2190100397e37b574f3602f841215fe05dfe62b1aa5187eccb50755dbd2/9.0.2/lib/x86_64-osx-ghc-9.0.2/haskell-word-game-0.1.0.0-D3lvsSuaKGi7eMgykUyoN7-haskell-word-game-exe"
 dynlibdir  = "/Users/macadmin/Code/haskell-word-game/.stack-work/install/x86_64-osx/e546c2190100397e37b574f3602f841215fe05dfe62b1aa5187eccb50755dbd2/9.0.2/lib/x86_64-osx-ghc-9.0.2"
 datadir    = "/Users/macadmin/Code/haskell-word-game/.stack-work/install/x86_64-osx/e546c2190100397e37b574f3602f841215fe05dfe62b1aa5187eccb50755dbd2/9.0.2/share/x86_64-osx-ghc-9.0.2/haskell-word-game-0.1.0.0"
 libexecdir = "/Users/macadmin/Code/haskell-word-game/.stack-work/install/x86_64-osx/e546c2190100397e37b574f3602f841215fe05dfe62b1aa5187eccb50755dbd2/9.0.2/libexec/x86_64-osx-ghc-9.0.2/haskell-word-game-0.1.0.0"
