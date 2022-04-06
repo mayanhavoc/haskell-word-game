@@ -1,0 +1,16 @@
+/Users/macadmin/.stack/programs/x86_64-osx/ghc-9.0.2/lib/ghc-9.0.2/lib/x86_64-osx-ghc-9.0.2/rts-1.0.2/include/ghcversion.h:
+  hash: 3b6c0f16983344ce12525816947d892da98bc96f17a664531494f515b9356c81
+/Users/macadmin/Code/haskell-word-game/test/Spec.hs:
+  hash: 647dfa0e308edbc1c20d80b2a278a11825aa013b063a0c22bbc739da6399b26f
+/Users/macadmin/Code/haskell-word-game/haskell-word-game.cabal:
+  hash: d634431d09fd308c7000484273914251000b9ea3dc36da3e846949b52a105d87
+/Users/macadmin/Code/haskell-word-game/ChangeLog.md:
+  hash: 657d918d15d979572463ab47746e9d65252e76d7f4b886b158b2189a6d459968
+? /Users/macadmin/Code/haskell-word-game/.stack-work/dist/x86_64-osx/Cabal-3.4.1.0/build/haskell-word-game-test/autogen/Paths_haskell_word_game.hs
+: hash: a6396ac5ba0ef0335a455f8e4900922c4113097ef9ad9a0ca8fff85171088d17
+? /Users/macadmin/Code/haskell-word-game/.stack-work/dist/x86_64-osx/Cabal-3.4.1.0/build/haskell-word-game-test/autogen/cabal_macros.h
+: hash: cb76638c8a503c21c2874fb24ef2ad809d3b72fee30a89492067f9a0e9fc9732
+/Users/macadmin/Code/haskell-word-game/README.md:
+  hash: 01c51b3ff49dd431c4910b565165f1bda91cc12157d476b68997e1d8c349ff55
+/Users/macadmin/Code/haskell-word-game/package.yaml:
+  hash: eff7a71365769f542bca8472b56f424c71beee0435bea9d03d5c0aa0c9000c4b

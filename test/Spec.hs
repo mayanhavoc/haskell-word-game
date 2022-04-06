@@ -1,8 +1,20 @@
+import Data
 import Lib
 import Test.Hspec
 
 main :: IO ()
 main = hspec $ do
-  describe "How to write a test" $ do
-    it "Should be able to run tests" $ do
-      someString `shouldBe` "someString"
+  describe "formatGrid" $ do
+    it "Should concatenate every line with a newline" $ do
+      (formatGrid ["abc", "def", "ghi"]) `shouldBe` "abc\ndef\nghi\n"
+
+  describe "findWord" $ do
+    it "Should find words that exist on the Grid" $ do
+      findWord grid "HASKELL" `shouldBe` Just "HASKELL"
+      findWord grid "PERL" `shouldBe` Just "PERL"
+      findWord grid "SCHEME" `shouldBe` Just "SCHEME"
+      findWord grid "MONSTER" `shouldBe` Nothing
+
+  describe "findWords" $ do
+    it "Should find all the words that exist on the Grid" $ do
+      findWords grid languages `shouldBe` languages
