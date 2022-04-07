@@ -6,18 +6,19 @@ module Lib
     findWord,
     findWords,
     findWordInLine,
+    gridWithCoords,
+    cell2char,
     skew,
     zipOverGrid,
     zipOverGridWith,
-    gridWithCoords,
-    cell2char,
+    findWordInCellLinePrefix,
     Cell (Cell, Indent),
   )
 where
 
 import Data (grid, languages)
 import Data.List (isInfixOf, transpose)
-import Data.Maybe (catMaybes)
+import Data.Maybe (catMaybes, listToMaybe)
 
 data Cell
   = Cell (Integer, Integer) Char
@@ -73,9 +74,11 @@ diagonalize :: Grid Cell -> Grid Cell
 diagonalize = transpose . skew
 
 findWord :: Grid Cell -> String -> Maybe [Cell]
-findWord grid word = undefined
+findWord grid word =
+  let lines = getLines grid
+      foundWords = map (findWordInLine word) lines
+   in listToMaybe (catMaybes foundWords)
 
--- let lines = getLines grid
 --  found = any (findWordInLine word) lines
 -- in if found then Just word else Nothing
 
@@ -86,4 +89,16 @@ findWords grid words =
    in catMaybes foundWords
 
 findWordInLine :: String -> [Cell] -> Maybe [Cell]
-findWordInLine = undefined
+findWordInLine _ [] = Nothing
+findWordInLine word line =
+  let found = findWordInCellLinePrefix [] word line
+   in case found of
+        Nothing -> findWordInLine word (tail line)
+        cs@(Just _) -> cs
+
+findWordInCellLinePrefix :: [Cell] -> String -> [Cell] -> Maybe [Cell]
+findWordInCellLinePrefix acc (x : xs) (c : cs)
+  | x == cell2char c =
+    findWordInCellLinePrefix (c : acc) xs cs
+findWordInCellLinePrefix acc [] _ = Just $ reverse acc
+findWordInCellLinePrefix _ _ _ = Nothing
